@@ -1,0 +1,36 @@
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
+<header id="main-header">
+
+    <div class="logo">
+        <div class="logo-content">
+            <p class="logo-content-first">CAR</p><p class="logo-content-second">RENTAL</p>
+        </div>
+    </div>
+
+    <nav class="nav-top">
+        <ul class="main-menu">
+            <li><a href="home">Strona główna</a></li>
+            <li><a href="oferta">Oferta</a></li>
+            <li><a href="info">Informacje</a></li>
+            <li><a href="kontakt">Kontakt</a></li>
+        </ul>
+
+
+        <ul class="login">
+            <li><a id="login">Zaloguj się</a>
+                <div class="login-content">
+                    <form action="zalogowany.html" >
+                        <div class="login-input">
+                            <input type="text" placeholder="e-mail">
+                            <input type="password" placeholder="hasło">
+                        </div>
+                        <input class="login-submit" type="submit" value="Zaloguj się">
+                    </form>
+                </div>
+            </li>
+            <li><a href="register">Zarejestruj się</a></li>
+        </ul>
+
+    </nav>
+
+</header>

@@ -1,0 +1,240 @@
+.boxmat
+{
+	background-color: #C8D2BE;
+	width: 700px;
+	height: 300px;
+	position: relative;
+	margin: 130px auto;
+	border-radius: 5px;
+}
+
+.content-box
+{
+	background-color: #DBD6CE;
+	position: relative;
+	width: 500px;
+	height: 500px;
+	border-radius: 5px;
+	top: -100px;
+	left: -150px;
+	-webkit-box-shadow: 0px 0px 30px 4px rgba(242,237,228,1);
+	-moz-box-shadow: 0px 0px 30px 4px rgba(242,237,228,1);
+	box-shadow: 0px 0px 30px 4px rgba(242,237,228,1);
+	transition: all 1.5s;
+	overflow: hidden;
+	
+}
+
+.background
+{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	opacity: 0.1;
+	transition: all 1.5s;
+}
+
+.option1-other
+{
+	display: block;
+	width: 320px;
+	height: 300px;
+	position: relative;
+	left: 370px;
+	top: -500px;
+	text-align: center;
+	opacity: 1;
+	transition: all 0.5s;
+}
+
+.option1-other p
+{
+	margin-top: 100px;
+	color: #000;
+	font-size: 24px;
+}
+
+.button-other
+{
+	display: block;
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	left: 60px;
+	cursor: pointer;
+	background-color: #CD5F5F;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.button-other:hover
+{
+	background-color: #AB3434;
+}
+
+
+.option2-other
+{
+	display: none;
+	width: 320px;
+	height: 300px;
+	position: relative;
+	left: 20px;
+	top: -500px;
+	text-align: center;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.option2-other p
+{
+	margin-top: 90px;
+	color: #000;
+	font-size: 24px;
+}
+
+.option1
+{
+	display: block;
+	width: 100%;
+	position: absolute;
+	color: black;
+	top: 0;
+	left: 0;
+	text-align: center;
+	opacity: 1;
+	transition: all 0.4s;
+}
+
+.option2
+{
+	display: none;
+	width: 100%;
+	position: absolute;
+	color: black;
+	top: 0;
+	left: 0;
+	text-align: center;
+	opacity: 0;
+	transition: all 0.4s;
+}
+.option1 button
+{
+	background-color: #0EA10B;
+	margin-top: 30px;
+	width: 280px;
+	font-size: 22px;
+	letter-spacing: 1px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	height: 50px;
+	border-radius: 5px;
+}
+
+.option2 button
+{
+	background-color: #0EA10B;
+	margin-top: 30px;
+	width: 280px;
+	font-size: 22px;
+	letter-spacing: 1px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	height: 50px;
+	border-radius: 5px;
+}
+
+.option1 button:hover
+{
+	background-color: #0C8609;
+}
+
+.option2 button:hover
+{
+	background-color: #0C8609;
+}
+
+.option1 button:focus
+{
+	-webkit-box-shadow: 0px 0px 13px 0px rgba(12,134,9,1);
+	-moz-box-shadow: 0px 0px 13px 0px rgba(12,134,9,1);
+	box-shadow: 0px 0px 13px 0px rgba(12,134,9,1);
+}
+
+.option2 button:focus
+{
+	-webkit-box-shadow: 0px 0px 13px 0px rgba(12,134,9,1);
+	-moz-box-shadow: 0px 0px 13px 0px rgba(12,134,9,1);
+	box-shadow: 0px 0px 13px 0px rgba(12,134,9,1);
+}
+
+.select-car-info
+{
+	border-radius: 3px;
+	margin: 25px 8px 8px 8px;
+}
+
+.select-car-info input
+{
+	border: none;
+	font-size: 18px;
+}
+
+.select-car-info label
+{
+	margin-bottom: 10px;
+	color: #000;
+	font-size: 18px;
+}
+
+.user-input
+{
+	margin-top: 50px;
+}
+
+.user-input2
+{
+	margin-top: 30px;
+}
+
+.user-input input
+{
+	background-color: #F2ECE4;
+	outline: none;
+	border: none;
+	height: 32px;
+	border-radius: 3px;
+	font-size: 22px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	padding: 2px;
+}
+
+.user-input input:focus
+{
+	border: 1px solid #AEA9A4;
+}
+
+.user-input2 input
+{
+	background-color: #F2ECE4;
+	outline: none;
+	border: none;
+	height: 32px;
+	border-radius: 3px;
+	font-size: 22px;
+	margin-bottom: 5px;
+	box-sizing: border-box;
+}
+
+.user-input2 input:focus
+{
+		border: 1px solid #AEA9A4;
+}
+

@@ -1,0 +1,9 @@
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd" >
+
+<properties>
+    <entry key="mail.smtps.host">smtp.gmail.com</entry>
+    <entry key="mail.transport.protocol">smtps</entry>
+    <entry key="mail.smtps.auth">true</entry>
+    <entry key="mail.smtp.port">465</entry>
+    <entry key="mail.smtps.user">rentcarproject11@gmail.com</entry>
+</properties>
