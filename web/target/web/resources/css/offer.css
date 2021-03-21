@@ -1,0 +1,130 @@
+.selectBox
+{
+    background-color: #CD5F5F;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+}
+
+.selectBox:hover
+{
+    background-color: #AB3434;
+}
+
+.oferta-content:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.nav-filters
+{
+    float: left;
+    background-color: #68786E;
+    width: 20%;
+    height: 800px;
+    margin: 3%;
+    border-radius: 10px;
+}
+
+.multiselect
+{
+    margin-top: 10px;
+
+}
+
+.selectDate
+{
+    text-align: center;
+}
+
+.selectDate label
+{
+    margin: 10px;
+    font-weight: bold;
+}
+
+.date
+{
+    height: 30px;
+    font-size: 13px;
+}
+
+
+.selectBox {
+    position: relative;
+    cursor: pointer;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+    background-color: #E5A8A8;
+    font-size: 20px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    text-align: center;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.checkboxes {
+    display: none;
+    background-color: #CD5F5F;
+}
+
+.checkboxes label {
+    display: block;
+    height: 25px;
+}
+
+.checkboxes label:hover {
+    background-color: #1e90ff;
+}
+
+.cars
+{
+    float: left;
+    width: 60%;
+    margin: 3%;
+
+}
+
+#carsTable
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#carsTable tr
+{
+    display: flex;
+    border-radius: 10px;
+    margin: 15px 0 25px 0;
+    height: 70px;
+    cursor: pointer;
+    background-color: #C8D2BE;
+}
+
+#carsTable tr:hover
+{
+    background-color: #B2BBA9;
+}
+
+#carsTable th
+{
+    margin: auto;
+    display: table-cell;
+    width: 25%;
+    text-align: center;
+}

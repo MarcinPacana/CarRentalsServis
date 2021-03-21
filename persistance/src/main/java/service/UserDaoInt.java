@@ -10,6 +10,6 @@ public interface UserDaoInt {
     void update(User user);
     void delete(User user);
     User findByUserId(Long userId);
-    List<User> findByUserName(String userName);
+    User findByUserName(String userName);
     List<User> getAllUsers();
 }

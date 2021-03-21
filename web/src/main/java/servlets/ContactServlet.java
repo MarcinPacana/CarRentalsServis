@@ -40,7 +40,7 @@ public class ContactServlet extends HttpServlet {
         }
 
         if(sendOK == true){
-            resp.sendRedirect("alert.jsp");
+            resp.sendRedirect("alertConfirmOK.jsp");
         }
 
 }

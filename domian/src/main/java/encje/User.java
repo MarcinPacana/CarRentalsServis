@@ -33,20 +33,29 @@ public class User {
     @Column(name = "haslo", length = 50)
     private String password;
 
-    @Column(name = "urzytkownik_aktywny", nullable = false)
-    private boolean isActive = false;
-
     @OneToOne(cascade = CascadeType.ALL)
     private Address address;
+
+    @Column(name = "token")
+    private String token;
+
+    @Column(name = "urzytkownik_aktywny", nullable = false)
+    private boolean isActive;
+
+
 
     @OneToMany(mappedBy = "user")
     private List<Reservation> userReservations = new ArrayList<>();
 
 
 
+
+/*
     public void addReserwation (Reservation reservation){
         userReservations.add(reservation);
         reservation.setUser(this);
     }
+
+ */
 
 }

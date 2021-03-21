@@ -30,6 +30,39 @@ public class MailSender {
         return instance;
     }
 
+    public boolean sendMailTo(String toUser, String title, String cont){
+        Session session = Session.getDefaultInstance(prop);
+
+        try {
+            Message message = new MimeMessage(session);
+            String from = prop.getProperty("mail.smtps.user");
+            Address addressFrom = new InternetAddress(from);
+            message.setFrom(addressFrom);
+            message.addRecipient(Message.RecipientType.TO,new InternetAddress(toUser));
+            message.setSubject(title);
+            MimeBodyPart mimeBodyPart = new MimeBodyPart();
+            mimeBodyPart.setContent(cont,"text/html");
+            Multipart multipart = new MimeMultipart();
+            multipart.addBodyPart(mimeBodyPart);
+            message.setContent(multipart);
+
+            Transport transport = session.getTransport();
+            try{
+                transport.connect(null,PASSWORD);
+                transport.sendMessage(message,message.getAllRecipients());
+            }finally {
+                transport.close();
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return true;
+    }
+
+
+
+
     public boolean sendMail(String toUser, String title, String cont){
         Session session = Session.getDefaultInstance(prop);
 
@@ -60,6 +93,8 @@ public class MailSender {
 
         return true;
     }
+
+
 
     protected   Properties createProp(){
         FileInputStream in = null;

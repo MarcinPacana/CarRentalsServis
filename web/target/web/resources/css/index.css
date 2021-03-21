@@ -1,0 +1,130 @@
+#quick-rent
+{
+
+    padding: 15px;
+    width: 600px;
+    background-color: #CD5F5F;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    -webkit-box-shadow: 5px 4px 21px 10px rgba(61,0,0,0.98);
+    -moz-box-shadow: 5px 4px 21px 10px rgba(61,0,0,0.98);
+    box-shadow: 5px 4px 21px 10px rgba(61,0,0,0.98);
+}
+
+label
+{
+    display: block;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+
+.from
+{
+    margin-top: 10px;
+    float: left;
+    width: 50%;
+}
+
+.to
+{
+    margin-top: 10px;
+    float: left;
+    width: 50%;
+}
+
+.quck-rent-input
+{
+    width: 100%;
+    text-align: center;
+}
+
+
+.quck-rent-input input
+{
+    padding: 5px;
+    margin: 5px;
+    background-color: #efefef;
+    width: 90%;
+    height: 40px;
+    border: 1px solid black;
+    display: block;
+    font-size: 25px;
+    outline: none;
+}
+
+.quick-rent-submit
+{
+    font-size: 22px;
+    letter-spacing: 2px;
+    background-color: #F2E2E2;
+    margin-top: 20px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 98%;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.quick-rent-submit:hover
+{
+    background-color: #F1BABA;
+}
+
+.quick-rent-submit:focus
+{
+    border: 1px solid #F28686;
+}
+
+#comments
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 800px;
+}
+
+#comments section
+{
+    background-color: #464940;
+    margin-top: 15px;
+    height: 90px;
+    border-radius: 5px;
+}
+
+.comment-head
+{
+    height: 30px;
+    background-color: #353830;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    line-height: 5px;
+}
+
+.comment-user
+{
+    margin-left: 10px;
+    float: left;
+}
+
+.comment-date
+{
+    margin-right: 10px;
+    float: right;
+}
+
+.comment-content p
+{
+    margin-left: 10px;
+}
+
+.comment-content
+{
+    color: #fff;
+    line-height: 5px;
+}

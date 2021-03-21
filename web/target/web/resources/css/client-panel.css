@@ -1,0 +1,346 @@
+.content
+{
+	width: 900px;
+	margin: 50px auto;
+	position: relative;
+	height: 700px;
+}
+
+.client-nav
+{
+	position: relative;
+	width: 200px;
+	float: left;
+	height: 700px;
+	
+}
+
+.client-buttons
+{
+	position: relative;
+	width: 180px;
+	margin: auto;
+}
+
+
+.client-nav button
+{
+	width: 180px;
+	height: 50px;
+	outline: none;
+	border: none;
+	margin: 50px 0 10px 0;
+	border-radius: 5px;
+	background-color: #CD5F5F;
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.client-nav button:hover
+{
+	background-color: #AB3434;
+}
+
+.client-nav button:focus
+{
+-webkit-box-shadow: 0px 0px 14px 4px rgba(205,95,95,1);
+-moz-box-shadow: 0px 0px 14px 4px rgba(205,95,95,1);
+box-shadow: 0px 0px 14px 4px rgba(205,95,95,1);
+background-color: #AB3434;
+}
+
+
+.client-pad
+{
+	background-color: #FFFAF0;
+	width: 650px;
+	height: 700px;
+	left: 50px;
+	float: left;
+	position: relative;
+	border-radius: 5px;
+}
+
+.reservation
+{
+	display: block;
+}
+
+.reservation p
+{
+	text-align: center;
+}
+
+.reservation-past
+{
+	width: 600px;
+	margin: auto;
+}
+
+.reservation-past table
+{
+	width: 100%;
+}
+
+.row
+{
+	background-color: #D1CDC5;
+	font-size: 20px;
+}
+
+.reservation-this
+{
+	background-color: #BDB9B2;
+	width: 600px;
+	height: 70px;
+	border-radius: 5px;
+	border: 2px solid #CD5F5F;
+	margin: 20px auto;
+	position: relative;
+}
+
+.reservation-this button
+{
+	width: 200px;
+	position: relative;
+	outline: none;
+	border: none;
+	background-color: #CD5F5F;
+	float: right;
+	height: 100%;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.reservation-this button:hover
+{
+	background-color: #AB3434;
+}
+
+.reservation-this-car
+{
+	position: relative;
+	float: left;
+	width: 199px;
+	height: 100%;
+	text-align: center;
+	border-right: 1px solid #CD5F5F;
+}
+
+.reservation-this-car p
+{
+	margin-top: 23px;
+	font-size: 18px;
+}
+
+.reservation-this-dates
+{
+	width: 200px;
+	float: left;
+}
+
+.reservation-this-dates p
+{
+	text-align: left;
+}
+
+
+
+
+
+.person-data
+{
+	display: none;
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
+}
+
+.p-client-box
+{
+	background-color: #353A30;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	margin-top: 1px;
+	justify-content: space-between;
+	
+}
+
+.p-client-box label
+{
+	color: #fff;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+	
+}
+
+.p-client-box input
+{
+	color: #000;
+	width: 240px;
+	height: 22px;
+	margin-top: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	background-color: #353A30;
+	color: #fff;
+	border: none;
+	outline: none;
+}
+
+.p-client-box input:enabled
+{
+	color: #000;
+	width: 240px;
+	height: 26px;
+	margin-top: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	background-color: #FFFAF0;
+	color: #000;
+	border: none;
+	outline: none;
+}
+
+
+
+
+
+.button-edit
+{
+	margin-top: 50px;
+	float: right;
+	background-color: #FFA23B;
+	border: none;
+	outline: none;
+	width: 150px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 20px;
+	display: block;
+}
+
+.button-edit:hover
+{
+	background-color: #FF903F;
+}
+
+.button-save
+{
+	display: none;
+	font-size: 20px;
+	color: #fff;
+	margin-top: 50px;
+	float: right;
+	background-color: #7AC86E;
+	border: none;
+	outline: none;
+	width: 150px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.button-save:hover
+{
+	background-color: #67A85C;
+}
+
+
+.button-cancel
+{
+	display: none;
+	background-color: #FF5562;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	width: 150px;
+	height: 40px;
+	border: none;
+	outline: none;
+	margin-top: 50px;
+	float: right;
+	margin-right: 10px;
+}
+
+.button-cancel:hover
+{
+	background-color: #C8434C;
+}
+
+
+
+
+
+.change-password
+{
+	display: none;
+}
+
+.p-client-password
+{
+	
+	display: flex;
+	width: 100%;
+	height: 50px;
+	margin-top: 50px;
+	justify-content: space-between;
+	
+}
+
+.p-client-password label
+{
+	color: #000;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 50px;
+	display: block;
+	float: left;
+	
+}
+
+.p-client-password input
+{
+	color: #000;
+	width: 240px;
+	height: 25px;
+	background-color: #BDB9B2;
+	margin-top: 10px;
+	margin-right: 50px;
+	display: block;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	float: left;
+}
+
+.change-password-sub
+{
+	margin-top: 50px;
+	height: 50px;
+	width: 250px;
+	text-align: center;
+	margin-left: 30%;
+	background-color: #CD5F5F;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.change-password-sub:hover
+{
+	background-color: #AB3434;
+}

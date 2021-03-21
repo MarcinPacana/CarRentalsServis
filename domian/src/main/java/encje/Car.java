@@ -34,9 +34,11 @@ public class Car {
     @OneToMany(mappedBy = "car")
     private List<Reservation> carReservations = new ArrayList<>();
 
-
+/*
     public void addReservation(Reservation reservation) {
         carReservations.add(reservation);
         reservation.setCar(this);
     }
+
+ */
 }

@@ -12,15 +12,10 @@ import java.io.IOException;
 @WebServlet("/oferta")
 public class OfferServlet extends HttpServlet {
 
-    CarController carController;
 
-    OfferServlet(){
-        this.carController = new CarController();
-    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        super.doGet(req, resp);
+        req.getRequestDispatcher("offer.jsp").forward(req,resp);
     }
 }

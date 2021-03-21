@@ -12,18 +12,18 @@ public class UserDao implements UserDaoInt {
 
     private final Session session;
 
-    public UserDao(Session session) {
+    public UserDao() {
         this.session = HibernateCfg.getInstance().getSession();
     }
 
 
     @Override
     public void save(User user) {
+        System.out.println("jestesmy w save "+user.getToken());
         Transaction transaction = session.getTransaction();
         transaction.begin();
-        session.save(user);
+        session.persist(user);
         transaction.commit();
-        session.close();
     }
 
     @Override
@@ -51,29 +51,53 @@ public class UserDao implements UserDaoInt {
     }
 
     @Override
-    public List<User> findByUserName(String userName) {
+    public User findByUserName(String userName) {
         session.clear();
         Query query = session.createQuery("select u from User u where u.firstName = :imie");
         query.setParameter("imie",userName);
-        return query.getResultList();
+        return (User) query.getResultList().get(0);
+    }
+
+    public User findUserByToken(String token){
+        session.clear();
+        Query query = session.createQuery("select u from User u where u.token = :token");
+        query.setParameter("token",token);
+        List<User> userList = query.getResultList();
+        int size = userList.size();
+        if (size == 0) return null;
+        return (User) query.getResultList().get(0);
+    }
+
+    public User findUserByMail(String mail){
+        session.clear();
+        Query query = session.createQuery("select u from User u where u.mail = :mail");
+        query.setParameter("mail",mail);
+        return (User) query.getResultList().get(0);
     }
 
     public boolean mailExists(String mail){
         Query query = session.createQuery("select u.mail from User u where u.mail = :mail");
         query.setParameter("mail",mail);
-        List list = query.list();
-        return false;
+        int size = query.getResultList().size();
+        if (size == 0) return false;
+        else return true;
+    }
+
+    public boolean getIsActiveByToken(String token){
+        session.clear();
+        Query query = session.createQuery("select u.isActive from User u where u.token = :token");
+        query.setParameter("token",token);
+        return (boolean) query.getResultList().get(0);
     }
 
     @Override
     public List<User> getAllUsers() {
         session.clear();
-        return session.createQuery("from User",User.class).list();
+        return session.createQuery("select u from User u").list();
     }
 
     public User findByUserCity(String city){
         session.clear();
-
         return null;
     }
 }
